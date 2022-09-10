@@ -606,7 +606,7 @@
 
 					<footer id="footer" class="site-footer card shadow-sm border-0">
 						
-						<div>Theme <a target="_blank" rel="noopener" href="https://github.com/solstice23/hexo-theme-argon"><strong>Argon</strong></a> | Powered by Hexo</div>
+						<div>Theme <a target="_blank" rel="noopener" href="https://xiashaoyang.github.io"><strong>Argon</strong></a> | Powered by Hexo</div>
 						<span id="busuanzi_container_site_uv">
 							本站访客数 <span id="busuanzi_value_site_uv"></span> 人次
 						</span>
@@ -631,7 +631,69 @@
 		.comment-item-text .comment-sticker.lazyload{display: none;}
 	</style>
 </noscript>
-
+<!--网站输入效果开始-->
+<script src="https://fastly.jsdelivr.net/gh/huangwb8/bloghelper@latest/js/input-with-fire.js"></script>
+<!--鼠标样式：两个同心圆，大圆追小圆-->
+<style type="text/css">
+#cursor{position:fixed;width:16px;height:16px;background:#009688;border-radius:8px;opacity:0.25;z-index:10086;pointer-events:none;transition:0.2s ease-in-out;transition-property:background,opacity,transform}
+#cursor.hidden{opacity:0}
+#cursor.hover{opacity:0.1;transform:scale(2.5)}
+#cursor.active{opacity:0.5;transform:scale(0.5)}
+#clickME{cursor:pointer;display:inline-block;border:1px solid #009688}
+</style>
+<script src="https://fastly.jsdelivr.net/gh/huangwb8/bloghelper@latest/js/cursor_01.js"></script>
+<!--鼠标样式结束-->
+<!--鼠标特效开始-->
+<script type="text/javascript">
+var a_idx = 0;
+jQuery(document).ready(function($) {
+   $("body").click(function(e) {
+       var a = new Array("❤富强❤", "❤民主❤", "❤文明❤", "❤和谐❤", "❤自由❤", "❤平等❤", "❤公正❤", "❤法治❤", "❤爱国❤", "❤敬业❤", "❤诚信❤", "❤友善❤");
+       var $i = $("<span/>").text(a[a_idx]);
+       a_idx = (a_idx + 1) % a.length;
+       var x = e.pageX,
+       y = e.pageY;
+       $i.css({
+           "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+           "top": y - 20,
+           "left": x,
+           "position": "absolute",
+           "font-weight": "bold",
+           "color": "#ff6651"
+       });
+       $("body").append($i);
+       $i.animate({
+           "top": y - 180,
+           "opacity": 0
+       },
+       1500,
+       function() {
+           $i.remove();
+       });
+   });
+});
+</script>
+<!--鼠标特效结束-->
+<!--全页特效开始-->
+<script type="text/javascript">
+ var system ={}; 
+ var p = navigator.platform; 
+ system.win = p.indexOf("Win") == 0; 
+ system.mac = p.indexOf("Mac") == 0; 
+ system.x11 = (p == "X11") || (p.indexOf("Linux") == 0); 
+ // 电脑生效，手机不生效
+ if(system.win||system.mac||system.xll){
+     // 雪花(想用就去掉下面命令的//注释)
+     // $.getScript("https://fastly.jsdelivr.net/gh/huangwb8/bloghelper@latest/js/xiaxue.js");
+ 
+     // 樱花(想用就去掉下面命令的//注释)
+     // $.getScript("https://fastly.jsdelivr.net/gh/huangwb8/bloghelper@latest/js/yinghua.js");
+ 
+     // 烟花特效
+     $.getScript("https://fastly.jsdelivr.net/gh/huangwb8/bloghelper@latest/js/mouse-click.js");
+ }
+</script>
+<!--全页特效结束-->
 </body>
 
 
