@@ -791,7 +791,7 @@
 						<span id="busuanzi_container_site_uv">
 							本站访客数 <span id="busuanzi_value_site_uv"></span> 人次
 						</span>
-<!--耗时及占用内存开始-->
+	<!--耗时及占用内存开始-->
 <span id="momk"></span><span id="momk" style="color: #ff0000;"></span>
 <script type="text/javascript">
 function NewDate(str) {
@@ -823,8 +823,7 @@ setTimeout(momxc, 1000);
 @keyframes change{0%{color:#5cb85c;}25%{color:#556bd8;}50%{color:#e40707;}75%{color:#66e616;}100% {color:#67bd31;}}
 </style>
 <?php printf(' | 耗时 %.3f 秒 | 查询 %d 次 | 内存 %.2f MB |',timer_stop( 0, 3 ),get_num_queries(),memory_get_peak_usage() / 1024 / 1024);?><br>
-<!--耗时及占用内存结束-->
-					</footer>
+<!--耗时及占用内存结束-->				</footer>
 				</main>
 			</div>
 		</div>
@@ -899,6 +898,266 @@ jQuery(document).ready(function($) {
  }
 </script>
 <!--全页特效结束-->
+<style type="text/css">.my-face {
+  -webkit-animation: my-face 5s infinite ease-in-out;
+          animation: my-face 5s infinite ease-in-out;
+  display: inline-block;
+  margin: 0 5px;
+}
+ 
+@-webkit-keyframes my-face {
+  2%,
+  24%,
+  80% {
+    -webkit-transform: translate(0, 1.5px) rotate(1.5deg);
+            transform: translate(0, 1.5px) rotate(1.5deg);
+  }
+  4%,
+  68%,
+  98% {
+    -webkit-transform: translate(0, -1.5px) rotate(-0.5deg);
+            transform: translate(0, -1.5px) rotate(-0.5deg);
+  }
+  38%,
+  6% {
+    -webkit-transform: translate(0, 1.5px) rotate(-1.5deg);
+            transform: translate(0, 1.5px) rotate(-1.5deg);
+  }
+  8%,
+  86% {
+    -webkit-transform: translate(0, -1.5px) rotate(-1.5deg);
+            transform: translate(0, -1.5px) rotate(-1.5deg);
+  }
+  10%,
+  72% {
+    -webkit-transform: translate(0, 2.5px) rotate(1.5deg);
+            transform: translate(0, 2.5px) rotate(1.5deg);
+  }
+  12%,
+  64%,
+  78%,
+  96% {
+    -webkit-transform: translate(0, -0.5px) rotate(1.5deg);
+            transform: translate(0, -0.5px) rotate(1.5deg);
+  }
+  14%,
+  54% {
+    -webkit-transform: translate(0, -1.5px) rotate(1.5deg);
+            transform: translate(0, -1.5px) rotate(1.5deg);
+  }
+  16% {
+    -webkit-transform: translate(0, -0.5px) rotate(-1.5deg);
+            transform: translate(0, -0.5px) rotate(-1.5deg);
+  }
+  18%,
+  22% {
+    -webkit-transform: translate(0, 0.5px) rotate(-1.5deg);
+            transform: translate(0, 0.5px) rotate(-1.5deg);
+  }
+  20%,
+  36%,
+  46% {
+    -webkit-transform: translate(0, -1.5px) rotate(2.5deg);
+            transform: translate(0, -1.5px) rotate(2.5deg);
+  }
+  26%,
+  50% {
+    -webkit-transform: translate(0, 0.5px) rotate(0.5deg);
+            transform: translate(0, 0.5px) rotate(0.5deg);
+  }
+  28% {
+    -webkit-transform: translate(0, 0.5px) rotate(1.5deg);
+            transform: translate(0, 0.5px) rotate(1.5deg);
+  }
+  30%,
+  40%,
+  62%,
+  76%,
+  88% {
+    -webkit-transform: translate(0, -0.5px) rotate(2.5deg);
+            transform: translate(0, -0.5px) rotate(2.5deg);
+  }
+  32%,
+  34%,
+  66% {
+    -webkit-transform: translate(0, 1.5px) rotate(-0.5deg);
+            transform: translate(0, 1.5px) rotate(-0.5deg);
+  }
+  42% {
+    -webkit-transform: translate(0, 2.5px) rotate(-1.5deg);
+            transform: translate(0, 2.5px) rotate(-1.5deg);
+  }
+  44%,
+  70% {
+    -webkit-transform: translate(0, 1.5px) rotate(0.5deg);
+            transform: translate(0, 1.5px) rotate(0.5deg);
+  }
+  48%,
+  74%,
+  82% {
+    -webkit-transform: translate(0, -0.5px) rotate(0.5deg);
+            transform: translate(0, -0.5px) rotate(0.5deg);
+  }
+  52%,
+  56%,
+  60% {
+    -webkit-transform: translate(0, 2.5px) rotate(2.5deg);
+            transform: translate(0, 2.5px) rotate(2.5deg);
+  }
+  58% {
+    -webkit-transform: translate(0, 0.5px) rotate(2.5deg);
+            transform: translate(0, 0.5px) rotate(2.5deg);
+  }
+  84% {
+    -webkit-transform: translate(0, 1.5px) rotate(2.5deg);
+            transform: translate(0, 1.5px) rotate(2.5deg);
+  }
+  90% {
+    -webkit-transform: translate(0, 2.5px) rotate(-0.5deg);
+            transform: translate(0, 2.5px) rotate(-0.5deg);
+  }
+  92% {
+    -webkit-transform: translate(0, 0.5px) rotate(-0.5deg);
+            transform: translate(0, 0.5px) rotate(-0.5deg);
+  }
+  94% {
+    -webkit-transform: translate(0, 2.5px) rotate(0.5deg);
+            transform: translate(0, 2.5px) rotate(0.5deg);
+  }
+  0%,
+  100% {
+    -webkit-transform: translate(0, 0) rotate(0);
+            transform: translate(0, 0) rotate(0);
+  }
+}
+ 
+@keyframes my-face {
+  2%,
+  24%,
+  80% {
+    -webkit-transform: translate(0, 1.5px) rotate(1.5deg);
+            transform: translate(0, 1.5px) rotate(1.5deg);
+  }
+  4%,
+  68%,
+  98% {
+    -webkit-transform: translate(0, -1.5px) rotate(-0.5deg);
+            transform: translate(0, -1.5px) rotate(-0.5deg);
+  }
+  38%,
+  6% {
+    -webkit-transform: translate(0, 1.5px) rotate(-1.5deg);
+            transform: translate(0, 1.5px) rotate(-1.5deg);
+  }
+  8%,
+  86% {
+    -webkit-transform: translate(0, -1.5px) rotate(-1.5deg);
+            transform: translate(0, -1.5px) rotate(-1.5deg);
+  }
+  10%,
+  72% {
+    -webkit-transform: translate(0, 2.5px) rotate(1.5deg);
+            transform: translate(0, 2.5px) rotate(1.5deg);
+  }
+  12%,
+  64%,
+  78%,
+  96% {
+    -webkit-transform: translate(0, -0.5px) rotate(1.5deg);
+            transform: translate(0, -0.5px) rotate(1.5deg);
+  }
+  14%,
+  54% {
+    -webkit-transform: translate(0, -1.5px) rotate(1.5deg);
+            transform: translate(0, -1.5px) rotate(1.5deg);
+  }
+  16% {
+    -webkit-transform: translate(0, -0.5px) rotate(-1.5deg);
+            transform: translate(0, -0.5px) rotate(-1.5deg);
+  }
+  18%,
+  22% {
+    -webkit-transform: translate(0, 0.5px) rotate(-1.5deg);
+            transform: translate(0, 0.5px) rotate(-1.5deg);
+  }
+  20%,
+  36%,
+  46% {
+    -webkit-transform: translate(0, -1.5px) rotate(2.5deg);
+            transform: translate(0, -1.5px) rotate(2.5deg);
+  }
+  26%,
+  50% {
+    -webkit-transform: translate(0, 0.5px) rotate(0.5deg);
+            transform: translate(0, 0.5px) rotate(0.5deg);
+  }
+  28% {
+    -webkit-transform: translate(0, 0.5px) rotate(1.5deg);
+            transform: translate(0, 0.5px) rotate(1.5deg);
+  }
+  30%,
+  40%,
+  62%,
+  76%,
+  88% {
+    -webkit-transform: translate(0, -0.5px) rotate(2.5deg);
+            transform: translate(0, -0.5px) rotate(2.5deg);
+  }
+  32%,
+  34%,
+  66% {
+    -webkit-transform: translate(0, 1.5px) rotate(-0.5deg);
+            transform: translate(0, 1.5px) rotate(-0.5deg);
+  }
+  42% {
+    -webkit-transform: translate(0, 2.5px) rotate(-1.5deg);
+            transform: translate(0, 2.5px) rotate(-1.5deg);
+  }
+  44%,
+  70% {
+    -webkit-transform: translate(0, 1.5px) rotate(0.5deg);
+            transform: translate(0, 1.5px) rotate(0.5deg);
+  }
+  48%,
+  74%,
+  82% {
+    -webkit-transform: translate(0, -0.5px) rotate(0.5deg);
+            transform: translate(0, -0.5px) rotate(0.5deg);
+  }
+  52%,
+  56%,
+  60% {
+    -webkit-transform: translate(0, 2.5px) rotate(2.5deg);
+            transform: translate(0, 2.5px) rotate(2.5deg);
+  }
+  58% {
+    -webkit-transform: translate(0, 0.5px) rotate(2.5deg);
+            transform: translate(0, 0.5px) rotate(2.5deg);
+  }
+  84% {
+    -webkit-transform: translate(0, 1.5px) rotate(2.5deg);
+            transform: translate(0, 1.5px) rotate(2.5deg);
+  }
+  90% {
+    -webkit-transform: translate(0, 2.5px) rotate(-0.5deg);
+            transform: translate(0, 2.5px) rotate(-0.5deg);
+  }
+  92% {
+    -webkit-transform: translate(0, 0.5px) rotate(-0.5deg);
+            transform: translate(0, 0.5px) rotate(-0.5deg);
+  }
+  94% {
+    -webkit-transform: translate(0, 2.5px) rotate(0.5deg);
+            transform: translate(0, 2.5px) rotate(0.5deg);
+  }
+  0%,
+  100% {
+    -webkit-transform: translate(0, 0) rotate(0);
+            transform: translate(0, 0) rotate(0);
+  }
+}</style>
+<div class=""><span class="my-face">Copyright ©2022 版权所有 xiashaoyang୧(๑•̀⌄•́๑)૭</span></div>
+
 </body>
 
 
