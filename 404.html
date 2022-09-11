@@ -144,6 +144,16 @@ body{
 <body>
 	<div class="error">
 		<img src="\assets\img\favicon.ico">
+		/*设置网站字体*/
+/*原则上你可以设置多个字体，然后在不同的部位使用不同的字体*/
+@font-face{
+    font-family:btfFont;
+    src:
+    url(https://fastly.jsdelivr.net/gh/huangwb8/bloghelper@latest/fonts/13.woff2) format('woff2')
+}
+body{
+    font-family:"btfFont" !important
+}
 		<p>抱歉！您访问的页面不存在或已删除</p>
 		<a class="back" href="/">返回主页</a>
 	</div>
