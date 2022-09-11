@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>页面走丢啦~</title>
-	<link rel="shortcut icon" href="/images/favicon-32x32.png" type=image/x-icon>
+	<link rel="shortcut icon" href="\assets\img\favicon.ico" type=image/x-icon>
 </head>
 <style type="text/css">
 	.error{
@@ -60,7 +60,15 @@
 	    -webkit-box-sizing:border-box; /* Safari */
 	    box-sizing:border-box;
 	    list-style-type:none;
-	    font-family: Microsoft YaHei,microsoft yahei ui,微软雅黑,SimSun,楷体,楷体_GB2312;
+	    
+@font-face{
+    font-family:btfFont;
+    src:
+    url(https://fastly.jsdelivr.net/gh/huangwb8/bloghelper@latest/fonts/13.woff2) format('woff2')
+}
+body{
+    font-family:"btfFont" !important
+}
 	    font-size: 13px;
 	}
 
@@ -135,7 +143,7 @@
 
 <body>
 	<div class="error">
-		<img src="/images/404.png">
+		<img src=\assets\img\banner.jpg"">
 		<p>抱歉！您访问的页面不存在或已删除</p>
 		<a class="back" href="/">返回主页</a>
 	</div>
